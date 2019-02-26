@@ -1,8 +1,8 @@
 ///////////////////////////////////////////////////////
-//  Tarea.sce
+//  GAUUS JORDAN.sce
 //  Programa de solucion de ecuaciones lineales por medio de una matriz a traves del metodo Gauss Jordan
 //
-//  Este programa aproxima 
+//  Este programa resuelve un sistema de ecuaciones por Gauss Jordan
 //   Patricio Andres Saldivar Flores y Diego Fernando Montaño Pérez
 //   25 / Febrero  / 2019    version 1.0
 //////////////////////////////////////////////////////
@@ -11,7 +11,7 @@
 //////////////////////////////////////////////////////
 //   
 //
-//  Funcion que resuelve un sistema de ecuaciones para obtener X a traves del metodo Gauss Jordas
+//  Funcion que resuelve un sistema de ecuaciones para obtener X a traves del metodo Gauss Jordan
 //
 //   Parametros:
 //      A    Es el parametro de la matriz MAT
@@ -34,7 +34,7 @@ function X = Gauss(A)
                 fact= -A(k,i)
                 // Para cada columna j se hace una suma de la matriz en (k,j) mas la matriz en (i,j) por el factorial
                 for j=1 : size(A,2)
-                A(k,j)= A(k,j)+ fact*A(i,j)
+                   A(k,j)= A(k,j)+ fact*A(i,j)
                 end
             end
         end
@@ -42,7 +42,9 @@ function X = Gauss(A)
          disp(A)
      end
      //Se le regresa el valor de matriz A a X
-     X=A()
+     for i=1 : size(A,1)
+         X(i,1)= A(i,size(A,2))
+     end
 endfunction
 
 ///////////////////////
