@@ -1,8 +1,8 @@
 ///////////////////////////////////////////////////////
-//  Tarea.sce
+//  Montatnte.sce
 //  Programa de solucion de ecuaciones lineales por medio de una matriz a traves del metodo Montante
 //
-//  Este programa aproxima 
+//  Este programa resuelve un sistema de ecuaciones por Montante
 //   Patricio Andres Saldivar Flores y Diego Fernando Montaño Pérez
 //   25 / Febrero  / 2019    version 1.0
 //////////////////////////////////////////////////////
